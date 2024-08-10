@@ -1,0 +1,59 @@
+/* root */
+body{
+    background-color:#eff6ee ;
+
+}
+
+/* Custom styles for the sidebar */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    border: 5px solid #6c757d; 
+}
+.content {
+margin-left: 250px;
+padding: 20px;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+        background-color:#eff6ee ;
+    }
+}
+.navbar-toggler , .navbar-nav, .nav-item.sub-item{
+    margin-left: 1rem;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: darkgray;
+}
+
+.nav-item .arrow {
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+.nav-item .collapse.show .arrow {
+    transform: rotate(90deg);
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
